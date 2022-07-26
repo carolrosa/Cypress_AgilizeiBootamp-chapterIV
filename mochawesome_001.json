@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2022-07-26T23:39:44.617Z",
-    "end": "2022-07-26T23:39:50.373Z",
-    "duration": 5756,
+    "start": "2022-07-26T23:49:36.523Z",
+    "end": "2022-07-26T23:49:42.133Z",
+    "duration": 5610,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4e5728d2-22ba-43b3-b23a-2bced48ca86e",
+      "uuid": "e22b40cb-654d-42d9-877f-4eea663fb254",
       "title": "",
       "fullFile": "cypress/integration/registration.spec.js",
       "file": "cypress/integration/registration.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f33bfb7d-887b-4f80-867c-ee346c71577e",
+          "uuid": "c03aacef-6941-4696-8a58-872136a3670e",
           "title": "Registration",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "When correctly filled, then the registration should be finished with success - fixed data",
               "fullTitle": "Registration When correctly filled, then the registration should be finished with success - fixed data",
               "timedOut": null,
-              "duration": 3102,
+              "duration": 3007,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.visit('/'); //inputs text / textarea / email -> type\ncy.get('input[name=\"firstName\"]').type('Harry');\ncy.get('input[name=\"lastName\"]').type('Potter');\ncy.get('textarea[name=\"adress\"]').type('Rua dos Alfeneiros, 4');\ncy.get('input[name=\"emailAdress\"]').type('potter.h@mail.com'); //inputs radio / checkboxes -> check\ncy.get('input[value=\"m\"]').check();\ncy.get('input[type=\"checkbox\"]').check('Netflix');\ncy.get('input[type=\"checkbox\"]').check('Livros'); //inputs combobox / select -> select\ncy.get('select#countries').select('Dinamarca', {\n  force: true\n});\ncy.get('select#years').select('1980', {\n  force: true\n});\ncy.get('select#months').select('Julho', {\n  force: true\n});\ncy.get('select#days').select('31', {\n  force: true\n}); //inputs password -> type\ncy.get('input#firstpassword').type('Lero2022');\ncy.get('input#secondpassword').type('Lero2022'); //inputs button -> click\ncy.get('button#submitbtn').click(); //assertions\ncy.url().should('contain', 'listagem');",
               "err": {},
-              "uuid": "85a6be2d-b6e7-4657-bbd9-80a7c417388e",
-              "parentUUID": "f33bfb7d-887b-4f80-867c-ee346c71577e",
+              "uuid": "195c2dd9-1831-4d0c-a496-4a2180fb700d",
+              "parentUUID": "c03aacef-6941-4696-8a58-872136a3670e",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "When correctly filled, then the registration should be finished with success - using random data",
               "fullTitle": "Registration When correctly filled, then the registration should be finished with success - using random data",
               "timedOut": null,
-              "duration": 2616,
+              "duration": 2581,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.visit('/');\ncy.get('input[name=\"firstName\"]').type(chance.first());\ncy.get('input[name=\"lastName\"]').type(chance.last());\ncy.get('textarea[name=\"adress\"]').type(chance.address());\ncy.get('input[name=\"emailAdress\"]').type(chance.email());\ncy.get('input[value=\"m\"]').check();\ncy.get('input[type=\"checkbox\"]').check('Netflix');\ncy.get('input[type=\"checkbox\"]').check('Livros');\ncy.get('select#countries').select('Dinamarca', {\n  force: true\n});\ncy.get('select#years').select('1980', {\n  force: true\n});\ncy.get('select#months').select('Julho', {\n  force: true\n});\ncy.get('select#days').select('31', {\n  force: true\n});\ncy.get('input#firstpassword').type('Lero2022');\ncy.get('input#secondpassword').type('Lero2022');\ncy.get('button#submitbtn').click();\ncy.url().should('contain', 'listagem');",
               "err": {},
-              "uuid": "51b8b795-7d54-4791-88d3-b320a59ae24e",
-              "parentUUID": "f33bfb7d-887b-4f80-867c-ee346c71577e",
+              "uuid": "243fa145-a112-4b15-a881-eb44d41a6d88",
+              "parentUUID": "c03aacef-6941-4696-8a58-872136a3670e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "85a6be2d-b6e7-4657-bbd9-80a7c417388e",
-            "51b8b795-7d54-4791-88d3-b320a59ae24e"
+            "195c2dd9-1831-4d0c-a496-4a2180fb700d",
+            "243fa145-a112-4b15-a881-eb44d41a6d88"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5718,
+          "duration": 5588,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
