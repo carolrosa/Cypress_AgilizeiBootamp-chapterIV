@@ -1,0 +1,25 @@
+{
+  "name": "chapteriv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run --browser chrome",
+    "report:merge": "mochawesome-merge > index.json",
+    "report:mocha": "marge index.json",
+    "report:clean": "rimraf mochawesome-report index.json"
+  },
+  "keywords": [],
+  "author": "Caroline Rosa",
+  "license": "ISC",
+  "devDependencies": {
+    "chance": "^1.1.8",
+    "cypress": "^9.7.0",
+    "cypress-multi-reporters": "^1.6.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0",
+    "rimraf": "^3.0.2"
+  }
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "firstName": "First test name",
+        "lastName": "lastName",
+        "adress": "Any address",
+        "emailAdress": "email@mail.com",
+        "radioGender": "f",
+        "checks": [
+            "Netflix"
+        ],
+        "selectCountries": "Bangladesh",
+        "selectYears": "2018",
+        "selectMonths": "Abril",
+        "pwd": "Password1"
+    },
+    {
+        "firstName": "Second test name",
+        "lastName": "lastName",
+        "adress": "Any other address",
+        "emailAdress": "email@mail.com",
+        "radioGender": "m",
+        "checks": [
+            "Livros"
+        ],
+        "selectCountries": "Bangladesh",
+        "selectYears": "2019",
+        "selectMonths": "Abril",
+        "pwd": "Password2"
+    }
+]

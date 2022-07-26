@@ -1,0 +1,9 @@
+{
+    "$schema": "https://on.cypress.io/cypress.schema.json",
+    "baseUrl": "https://form-agilizei.netlify.app",
+    "watchForFileChanges": false,
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile": "reporter-config.json"
+    }
+}
